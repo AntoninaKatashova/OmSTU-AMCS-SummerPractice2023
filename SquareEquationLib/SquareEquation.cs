@@ -23,7 +23,7 @@ public class SquareEquation
                 var x1 = - (b + Math.Sign(b) * Math.Sqrt(D)) / 2;
                 answer = new double[]{x1};
             }
-            else if (D > double.Epsilon)
+            else if (D > 0)
             {
                 var x1 = - (b + Math.Sign(b) * Math.Sqrt(D)) / 2;
                 var x2 = c / x1;
