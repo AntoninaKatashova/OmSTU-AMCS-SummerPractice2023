@@ -27,7 +27,15 @@ public class SquareEquation
             else
             {
                 var x1 = - (b + Math.Sign(b) * Math.Sqrt(D)) / 2;
-                var x2 = c / x1;
+                double x2;
+                if (Math.Abs(x1) < eps)
+                {
+                    x2 = - b;
+                }
+                else
+                {
+                    x2 = c / x1;
+                }
                 answer = new double[]{x1, x2};
             }
             return answer;
