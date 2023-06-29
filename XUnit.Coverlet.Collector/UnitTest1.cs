@@ -35,6 +35,7 @@ public class UnitTest1
     [InlineData(1, -11, 18, 9, 2, 9)]
     [InlineData(3, -11, 4, 3.2573339575, 0.4093327091, 9)]
     [InlineData(2, 15, 28, -4, -3.5, 9)]
+    [InlineData(1, 0, 1, 0, 0, 9)]
     public void TestTwo(double a, double b, double c, double expected1, double expected2,  int precision)
     {
         double[] testTwoSolve = SquareEquation.Solve(a, b, c);
