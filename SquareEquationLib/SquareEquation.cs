@@ -17,7 +17,7 @@ public class SquareEquation
             D = Math.Pow(b,2) - 4 * c;
             if ((D < -eps))
             {
-                answer = new double[]{};
+                answer = new double[0];
             }
             else if ((-eps < D) && (D < eps))
             {
