@@ -1,5 +1,3 @@
-using Xunit;
-using System;
 using SquareEquationLib;
 
 public class UnitTest1
