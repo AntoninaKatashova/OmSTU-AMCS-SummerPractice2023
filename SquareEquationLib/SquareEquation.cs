@@ -19,7 +19,7 @@ public class SquareEquation
             {
                 answer = new double[]{};
             }
-            else if ((-eps < D) && (D < eps))
+            else if (Math.Abs(D) < eps)
             {
                 var x1 = - (b + Math.Sign(b) * Math.Sqrt(D)) / 2;
                 answer = new double[]{x1};
