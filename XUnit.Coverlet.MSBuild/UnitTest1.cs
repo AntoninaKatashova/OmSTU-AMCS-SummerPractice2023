@@ -50,7 +50,7 @@ public class UnitTest1
     [InlineData(1, 8, 25)]
     [InlineData(2, 16, 38)]
     [InlineData(1, 5, 100)]
-    [InlineData(8, -24, 200)]
+    [InlineData(8, 24, 200)]
     public void TestNegative(double a, double b, double c)
     {
         double[] test = SquareEquation.Solve(a, b, c);
