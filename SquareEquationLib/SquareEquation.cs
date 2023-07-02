@@ -26,15 +26,16 @@ public class SquareEquation
             }
             else
             {
-                var x1 = - (b + Math.Sign(b) * Math.Sqrt(D)) / 2;
-                double x2;
-                if (Math.Abs(x1) < eps)
+                double x1, x2;
+                if (Math.Pow(b,2) >= 4 * c)
                 {
-                    x2 = - b;
+                    x1 = - (b + Math.Sign(b) * Math.Sqrt(D)) / 2;
+                    x2 = c / x1;
                 }
                 else
                 {
-                    x2 = c / x1;
+                    x1 = Math.Sqrt(c);
+                    x2 = - Math.Sqrt(c);
                 }
                 answer = new double[]{x1, x2};
             }
