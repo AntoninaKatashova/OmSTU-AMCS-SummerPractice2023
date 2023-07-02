@@ -5,16 +5,22 @@ namespace BDD.Test;
 [Binding]
 class UnitTest1
 {
-    
     double coef_a, coef_b, coef_c;
     double[] answer = new double[]{};
 
-    private readonly SquareEquation _squareEquation;
-    public UnitTest1(double coef_a, double coef_b, double coef_c)
+    [Given ("Квадратное уравнение с коэффициентами ((.*), (.*), (.*))")]
+    public void SetOfCoefficients1(double a, double b, double c)
     {
-        _squareEquation = new SquareEquation();
+        coef_a = a;
+        coef_b = b;
+        coef_c = c;
     }
 
-    [Given ("Квадратное уравнение с коэффициентами ((.*), (.*), (.*))")]
-    public 
+    [When("вычисляются корни квадратного уравнения")]
+    public void Condition1()
+    {
+        answer = SquareEquation.Solve(coef_a, coef_b, coef_c);
+    }
+
+    [Then("квадратное уравнение имеет два корня ((.*), (.*)) кратности один")]
 }
