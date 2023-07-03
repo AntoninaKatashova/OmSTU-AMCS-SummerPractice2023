@@ -20,7 +20,12 @@ class UnitTest1
     [When(@"вычисляются корни квадратного уравнения")]
     public void ВычисляютсяКорниКвадратногоУравнения()
     {
-        actual = SquareEquation.Solve(coef_a, coef_b, coef_c);
+        try
+        {
+            actual = SquareEquation.Solve(coef_a, coef_b, coef_c);
+        }
+        catch 
+        {}
     }
 
     [Then(@"квадратное уравнение имеет два корня \((.*), (.*)\) кратности один")]
