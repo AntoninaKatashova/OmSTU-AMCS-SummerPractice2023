@@ -48,7 +48,7 @@ class UnitTest1
     }
 
     [Given(@"Квадратное уравнение с коэффициентами \(NaN, (.*), (.*)\)")]
-    public void КвадратноеУравнениеСКоэффициентамиГдеAНеМожетБытьОпределено(double a, double b, double c)
+    public void КвадратноеУравнениеСКоэффициентамиГдеAНеМожетБытьОпределено(double b, double c)
     {
         coef_a = double.NaN;
         coef_b = b;
@@ -56,7 +56,7 @@ class UnitTest1
     }
 
     [Given(@"Квадратное уравнение с коэффициентами \((.*), NaN, (.*)\)")]
-    public void КвадратноеУравнениеСКоэффициентамиГдеBНеМожетБытьОпределено(double a, double b, double c)
+    public void КвадратноеУравнениеСКоэффициентамиГдеBНеМожетБытьОпределено(double a, double c)
     {
         coef_a = a;
         coef_b = double.NaN;
@@ -64,7 +64,7 @@ class UnitTest1
     }
 
     [Given(@"Квадратное уравнение с коэффициентами \((.*), (.*), NaN\)")]
-    public void КвадратноеУравнениеСКоэффициентамиГдеCНеМожетБытьОпределено(double a, double b, double c)
+    public void КвадратноеУравнениеСКоэффициентамиГдеCНеМожетБытьОпределено(double a, double b)
     {
         coef_a = a;
         coef_b = b;
@@ -72,7 +72,7 @@ class UnitTest1
     }
 
     [Given(@"Квадратное уравнение с коэффициентами \(Double\.PositiveInfinity, (.*), (.*)\)")]
-    public void КвадратноеУравнениеСКоэффициентамиГдеAНеМожетБытьПоложительнойБесконечностью(double a, double b, double c)
+    public void КвадратноеУравнениеСКоэффициентамиГдеAНеМожетБытьПоложительнойБесконечностью(double b, double c)
     {
         coef_a = double.PositiveInfinity;
         coef_b = b;
@@ -80,7 +80,7 @@ class UnitTest1
     }
 
     [Given(@"Квадратное уравнение с коэффициентами \((.*), Double\.PositiveInfinity, (.*)\)")]
-    public void КвадратноеУравнениеСКоэффициентамиГдеBНеМожетБытьПоложительнойБесконечностью(double a, double b, double c)
+    public void КвадратноеУравнениеСКоэффициентамиГдеBНеМожетБытьПоложительнойБесконечностью(double a, double c)
     {
         coef_a = a;
         coef_b = double.PositiveInfinity;
@@ -88,7 +88,7 @@ class UnitTest1
     }
 
     [Given(@"Квадратное уравнение с коэффициентами \((.*), (.*), Double\.PositiveInfinity\)")]
-    public void КвадратноеУравнениеСКоэффициентамиГдеCНеМожетБытьПоложительнойБесконечностью(double a, double b, double c)
+    public void КвадратноеУравнениеСКоэффициентамиГдеCНеМожетБытьПоложительнойБесконечностью(double a, double b)
     {
         coef_a = a;
         coef_b = b;
@@ -96,7 +96,7 @@ class UnitTest1
     }
 
     [Given(@"Квадратное уравнение с коэффициентами \(Double\.NegativeInfinity, (.*), (.*)\)")]
-    public void КвадратноеУравнениеСКоэффициентамиГдеAНеМожетБытьОтрицательнойБесконечностью(double a, double b, double c)
+    public void КвадратноеУравнениеСКоэффициентамиГдеAНеМожетБытьОтрицательнойБесконечностью(double b, double c)
     {
         coef_a = double.NegativeInfinity;
         coef_b = b;
@@ -104,7 +104,7 @@ class UnitTest1
     }
 
     [Given(@"Квадратное уравнение с коэффициентами \((.*), Double\.NegativeInfinity, (.*)\)")]
-    public void КвадратноеУравнениеСКоэффициентамиГдеBНеМожетБытьОтрицательнойБесконечностью(double a, double b, double c)
+    public void КвадратноеУравнениеСКоэффициентамиГдеBНеМожетБытьОтрицательнойБесконечностью(double a, double c)
     {
         coef_a = a;
         coef_b = double.NegativeInfinity;
@@ -112,7 +112,7 @@ class UnitTest1
     }
 
     [Given(@"Квадратное уравнение с коэффициентами \((.*), (.*), Double\.NegativeInfinity\)")]
-    public void КвадратноеУравнениеСКоэффициентамиГдеCНеМожетБытьОтрицательнойБесконечностью(double a, double b, double c)
+    public void КвадратноеУравнениеСКоэффициентамиГдеCНеМожетБытьОтрицательнойБесконечностью(double a, double b)
     {
         coef_a = a;
         coef_b = b;
