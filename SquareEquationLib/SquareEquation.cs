@@ -5,7 +5,7 @@ public class SquareEquation
     public static double[] Solve(double a, double b, double c)
     {
         double D;
-        double eps = 1e-6;
+        double eps = 1e-9;
         double[] answer = new double[]{};
         var massif = new double[]{double.NaN, double.NegativeInfinity, double.PositiveInfinity};
         if ((Math.Abs(a) < eps) || (massif.Contains(a)) || (massif.Contains(b)) || (massif.Contains(c)))
