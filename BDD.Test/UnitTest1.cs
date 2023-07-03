@@ -23,7 +23,7 @@ class UnitTest1
         actual = SquareEquation.Solve(coef_a, coef_b, coef_c);
     }
 
-    [Then(@"квадратное уравнение имеет два корня \((.*), (.*)\) кратности один")]
+    [Then(@"квадратное уравнение имеет два корня \((.*), (.*)\) кратности 1")]
     public void SolvingTheProblem1(double one_number, double two_number)
     {
         double[] expected = {one_number, two_number};

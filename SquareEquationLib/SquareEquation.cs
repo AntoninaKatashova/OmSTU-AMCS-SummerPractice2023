@@ -27,15 +27,15 @@ public class SquareEquation
             else
             {
                 double x1, x2;
-                if (Math.Pow(b,2) >= 4 * c)
+                if (b != 0)
                 {
-                    x1 = - (b + Math.Sign(b) * Math.Sqrt(D)) / 2;
+                    x1 = -(b + Math.Sign(b) * Math.Sqrt(D)) / 2;
                     x2 = c / x1;
                 }
                 else
                 {
-                    x1 = Math.Sqrt(c);
-                    x2 = - Math.Sqrt(c);
+                    x1 = Math.Sqrt(-1 * Math.Sign(a) * c);
+                    x2 = -Math.Sqrt(-1 * Math.Sign(a) * c);
                 }
                 answer = new double[]{x1, x2};
             }
