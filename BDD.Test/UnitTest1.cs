@@ -126,7 +126,7 @@ class UnitTest1
     [Then(@"выбрасывается исключение ArgumentException")]
     public void SolvingTheProblem4()
     {
-        Assert.Throws<ArgumentException>(() => actual);
+        Assert.Throws<ArgumentException>(() => SquareEquation.Solve(coef_a, coef_b, coef_c));
     }
 
 
