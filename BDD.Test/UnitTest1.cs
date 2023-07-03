@@ -9,7 +9,7 @@ class UnitTest1
     int precision = 9;
     double[] actual = new double[]{};
 
-    [Given ("Квадратное уравнение с коэффициентами ((.*), (.*), (.*))")]
+    [Given (@"Квадратное уравнение с коэффициентами \((.*), (.*), (.*)\)")]
     public void SetOfCoefficients(double a, double b, double c)
     {
         coef_a = a;
@@ -17,13 +17,13 @@ class UnitTest1
         coef_c = c;
     }
 
-    [When("вычисляются корни квадратного уравнения")]
+    [When(@"вычисляются корни квадратного уравнения")]
     public void Condition()
     {
         actual = SquareEquation.Solve(coef_a, coef_b, coef_c);
     }
 
-    [Then("квадратное уравнение имеет два корня ((.*), (.*)) кратности один")]
+    [Then(@"квадратное уравнение имеет два корня \((.*), (.*)\) кратности один")]
     public void SolvingTheProblem1(double one_number, double two_number)
     {
         double[] expected = {one_number, two_number};
@@ -34,19 +34,21 @@ class UnitTest1
         }
     }
 
-    [Then("квадратное уравнение имеет один корень 1 кратности два")]
+    [Then(@"квадратное уравнение имеет один корень 1 кратности два")]
     public void SolvingTheProblem2()
     {
         Assert.Equal(1, actual[0], precision);
     }
 
-    [Then("множество корней квадратного уравнения пустое")]
+    [Then(@"множество корней квадратного уравнения пустое")]
     public void SolvingTheProblem3()
     {
         Assert.Empty(actual);
     }
 
-    [Then("выбрасывается исключение ArgumentException")]
+
+
+    [Then(@"выбрасывается исключение ArgumentException")]
     public void SolvingTheProblem4()
     {
         Assert.Throws<ArgumentException>(() => actual);
