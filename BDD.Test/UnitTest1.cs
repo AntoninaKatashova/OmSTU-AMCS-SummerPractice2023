@@ -23,16 +23,17 @@ class UnitTest1
         actual = SquareEquation.Solve(coef_a, coef_b, coef_c);
     }
 
-    [Then(@"квадратное уравнение имеет два корня \((.*), (.*)\) кратности 1")]
-    public void SolvingTheProblem1(double one_number, double two_number)
-    {
-        double[] expected = {one_number, two_number};
-        Assert.True(expected.Length == actual.Length);
-        for (int i = 0; i < actual.Length; i++)
-        {
-            Assert.Equal(expected[i], actual[i], precision);
-        }
-    }
+    [Then(@"квадратное уравнение имеет два корня \((.*), (.*)\) кратности один")]
+         public void ТоКвадратноеУравнениеИмеетДваКорняКратностиОдин(double one_number, double two_number)
+         {
+             double[] expected = {one_number, two_number};
+            Assert.True(expected.Length == actual.Length);
+            for (int i = 0; i < actual.Length; i++)
+            {
+                Assert.Equal(expected[i], actual[i], precision);
+            }
+         }
+
 
     [Then(@"квадратное уравнение имеет один корень 1 кратности два")]
     public void SolvingTheProblem2()
