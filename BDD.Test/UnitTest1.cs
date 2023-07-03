@@ -24,8 +24,7 @@ class UnitTest1
         {
             actual = SquareEquation.Solve(coef_a, coef_b, coef_c);
         }
-        catch 
-        {}
+        catch {}
     }
 
     [Then(@"квадратное уравнение имеет два корня \((.*), (.*)\) кратности один")]
