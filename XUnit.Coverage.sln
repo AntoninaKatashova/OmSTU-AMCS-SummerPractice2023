@@ -3,13 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SquareEquationLib", "SquareEquationLib\SquareEquationLib.csproj", "{FFB26D87-433C-485C-81B7-47FDFB2C2E17}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BDD.Test", "BDD.Test\BDD.Test.csproj", "{AE6A1007-1779-48FE-825F-1EB95BEC0EB1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnit.Coverlet.Collector", "XUnit.Coverlet.Collector\XUnit.Coverlet.Collector.csproj", "{0E071A2D-4113-4A10-99BF-A04E147CB286}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnit.Coverlet.MSBuild", "XUnit.Coverlet.MSBuild\XUnit.Coverlet.MSBuild.csproj", "{55A0E274-7FE7-48D7-90E2-A5B43221B9B1}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BDD.Test", "BDD.Test\BDD.Test.csproj", "{AB7BE706-DDE4-45C2-8260-F8EF78B9D8FB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SquareEquationLib", "SquareEquationLib\SquareEquationLib.csproj", "{9B1CEE48-C5B3-4A08-B9C1-50DDDA4A42B4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,21 +16,13 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{FFB26D87-433C-485C-81B7-47FDFB2C2E17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FFB26D87-433C-485C-81B7-47FDFB2C2E17}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FFB26D87-433C-485C-81B7-47FDFB2C2E17}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FFB26D87-433C-485C-81B7-47FDFB2C2E17}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0E071A2D-4113-4A10-99BF-A04E147CB286}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0E071A2D-4113-4A10-99BF-A04E147CB286}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0E071A2D-4113-4A10-99BF-A04E147CB286}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0E071A2D-4113-4A10-99BF-A04E147CB286}.Release|Any CPU.Build.0 = Release|Any CPU
-		{55A0E274-7FE7-48D7-90E2-A5B43221B9B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{55A0E274-7FE7-48D7-90E2-A5B43221B9B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{55A0E274-7FE7-48D7-90E2-A5B43221B9B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{55A0E274-7FE7-48D7-90E2-A5B43221B9B1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AB7BE706-DDE4-45C2-8260-F8EF78B9D8FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AB7BE706-DDE4-45C2-8260-F8EF78B9D8FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AB7BE706-DDE4-45C2-8260-F8EF78B9D8FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AB7BE706-DDE4-45C2-8260-F8EF78B9D8FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE6A1007-1779-48FE-825F-1EB95BEC0EB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE6A1007-1779-48FE-825F-1EB95BEC0EB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE6A1007-1779-48FE-825F-1EB95BEC0EB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE6A1007-1779-48FE-825F-1EB95BEC0EB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B1CEE48-C5B3-4A08-B9C1-50DDDA4A42B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B1CEE48-C5B3-4A08-B9C1-50DDDA4A42B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B1CEE48-C5B3-4A08-B9C1-50DDDA4A42B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B1CEE48-C5B3-4A08-B9C1-50DDDA4A42B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
