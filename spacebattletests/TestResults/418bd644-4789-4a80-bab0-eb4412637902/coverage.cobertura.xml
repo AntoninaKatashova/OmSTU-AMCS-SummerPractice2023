@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<coverage line-rate="1" branch-rate="1" version="1.9" timestamp="1688488565" lines-covered="7" lines-valid="7" branches-covered="6" branches-valid="6">
+  <sources>
+    <source>D:\</source>
+  </sources>
+  <packages>
+    <package name="spacebattle" line-rate="1" branch-rate="1" complexity="6">
+      <classes>
+        <class name="spacebattle.Battle" filename="Code\OmSTU-AMCS-SummerPractice2023\spacebattle\Battle.cs" line-rate="1" branch-rate="1" complexity="6">
+          <methods>
+            <method name="ShuttleMovement" signature="(System.Boolean,System.Boolean,System.Boolean,System.Double[],System.Double[])" line-rate="1" branch-rate="1" complexity="6">
+              <lines>
+                <line number="7" hits="7" branch="False" />
+                <line number="8" hits="7" branch="True" condition-coverage="100% (6/6)">
+                  <conditions>
+                    <condition number="2" type="jump" coverage="100%" />
+                    <condition number="5" type="jump" coverage="100%" />
+                    <condition number="16" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="9" hits="6" branch="False" />
+                <line number="10" hits="6" branch="False" />
+                <line number="12" hits="1" branch="False" />
+                <line number="13" hits="1" branch="False" />
+                <line number="14" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="7" hits="7" branch="False" />
+            <line number="8" hits="7" branch="True" condition-coverage="100% (6/6)">
+              <conditions>
+                <condition number="2" type="jump" coverage="100%" />
+                <condition number="5" type="jump" coverage="100%" />
+                <condition number="16" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="9" hits="6" branch="False" />
+            <line number="10" hits="6" branch="False" />
+            <line number="12" hits="1" branch="False" />
+            <line number="13" hits="1" branch="False" />
+            <line number="14" hits="1" branch="False" />
+          </lines>
+        </class>
+      </classes>
+    </package>
+  </packages>
+</coverage>
