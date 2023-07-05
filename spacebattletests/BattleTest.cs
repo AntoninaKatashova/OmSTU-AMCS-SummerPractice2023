@@ -46,25 +46,25 @@ public class BattleTest
         ChangeOfPosition = false;
     }
 
-    [Given(@"космический корабль имеет топливо в объеме \(.*)\ ед")]
+    [Given(@"космический корабль имеет топливо в объеме (.*) ед")]
     public void Космический_Корабль_Имеет_Топливо_В_Объеме(double fuel)
     {
         InitialVolume = fuel;
     }
 
-    [Given(@"имеет скорость расхода топлива при движении \(.*)\ ед")]
+    [Given(@"имеет скорость расхода топлива при движении (.*) ед")]
     public void Имеет_Скорость_Расхода_Топлива_При_Движении(double expenditure)
     {
         FlowRate = expenditure;
     }
 
-    [Given(@"космический корабль имеет угол наклона \(.*)\ град к оси OX")]
+    [Given(@"космический корабль имеет угол наклона (.*) град к оси OX")]
     public void Космический_Корабль_Имеет_Угол_Наклона(double Corner)
     {
         InitialAngle = Corner;
     }
 
-    [Given(@"имеет мгновенную угловую скорость \(.*)\ град")]
+    [Given(@"имеет мгновенную угловую скорость (.*) град")]
     public void Имеет_Мгновенную_Угловую_Скорость(double AngularVelocity)
     {
         AngularSpeed = AngularVelocity;
@@ -124,14 +124,14 @@ public class BattleTest
         Assert.Throws<Exception>(() => Battle.InclinationAngle(ExistenceAngle, ExistenceSpeed, PossibleChange, InitialAngle, AngularSpeed));
     }
 
-    [Then(@"новый объем топлива космического корабля равен \(.*)\ ед")]
+    [Then(@"новый объем топлива космического корабля равен (.*) ед")]
     public void Новый_Объем_Топлива_Космического_Корабля_Равен(double volume)
     {
         double expected = volume;
         Assert.Equal(expected, Fuel);
     }
 
-    [Then(@"угол наклона космического корабля к оси OX составляет \(.*)\ град")]
+    [Then(@"угол наклона космического корабля к оси OX составляет (.*) град")]
     public void Угол_Наклона_Космического_Корабля_К_Оси(double x)
     {
         double expected = x;
