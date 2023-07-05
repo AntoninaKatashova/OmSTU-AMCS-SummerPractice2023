@@ -1,8 +1,8 @@
-name: Spacebattle test
+name: Spacebattle.Turns test
 
 on:
   push:
-    branches: ["solution"]
+    branches: ["Shuttle_Turns"]
 
 jobs:
   build:
