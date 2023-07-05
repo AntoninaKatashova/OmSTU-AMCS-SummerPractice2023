@@ -76,7 +76,7 @@ public class BattleTest
         ExistenceAngle = false;
     }
 
-    [Given(@"мгновенную уголовую скорость невозможно определить")]
+    [Given(@"мгновенную угловую скорость невозможно определить")]
     public void Мгновенную_Угловую_Скорость_Невозможно_Определить()
     {
         ExistenceSpeed = false;
@@ -119,9 +119,18 @@ public class BattleTest
     [Then(@"возникает ошибка Exception")]
     public void Возникает_Ошибка_Exception()
     {
-        Assert.Throws<Exception>(() => Battle.ShuttleMovement(ChangeOfPosition, InstantaneousSpeed, ShuttlePosition, Speed, Position));
-        Assert.Throws<Exception>(() => Battle.MovementFromFuel(InitialVolume, FlowRate));
-        Assert.Throws<Exception>(() => Battle.InclinationAngle(ExistenceAngle, ExistenceSpeed, PossibleChange, InitialAngle, AngularSpeed));
+        if (!ChangeOfPosition || !InstantaneousSpeed || !ShuttlePosition)
+        {
+            Assert.Throws<Exception>(() => Battle.ShuttleMovement(ChangeOfPosition, InstantaneousSpeed, ShuttlePosition, Speed, Position));
+        }
+        else if (InitialVolume < FlowRate)
+        {    
+            Assert.Throws<Exception>(() => Battle.MovementFromFuel(InitialVolume, FlowRate));
+        }
+        else if (!ExistenceAngle || !ExistenceSpeed || !PossibleChange)
+        {
+            Assert.Throws<Exception>(() => Battle.InclinationAngle(ExistenceAngle, ExistenceSpeed, PossibleChange, InitialAngle, AngularSpeed));
+        }
     }
 
     [Then(@"новый объем топлива космического корабля равен (.*) ед")]
